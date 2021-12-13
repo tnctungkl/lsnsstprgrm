@@ -1,0 +1,428 @@
+/* admin */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap%27');
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0F1014;
+    font-family: "Montserrat";
+    overflow: hidden;
+}
+
+.tpanel-login-main-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45vh;
+    height: 45vh;
+    border-radius: 15px;
+    background-color: rgb(0,0,0,0.85);
+}
+
+.tpanel-admin-login {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 30vh;
+    height: 40vh;
+    border-radius: .2vh;
+    gap: 2vh;
+}
+
+.tpanel-user-login {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vh;
+    height: 40vh;
+    border-radius: .2vh;
+    gap: 2vh;
+}
+
+.tpanel-admin-register {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 30vh;
+    height: 40vh;
+    border-radius: .2vh;
+    gap: 2vh;
+}
+
+.tpanel-admin-login h1 ,.tpanel-user-login h1, .tpanel-admin-register  h1 {
+    position: relative;
+    width: 90%;
+    height: 5vh;
+    margin: 0;
+    font-size: 2vh;
+    font-weight: 900;
+    text-align: left;
+    color: white;
+}
+
+.admin-login-inputs {
+    position: relative;
+    width: 90%;
+    height: 5vh;
+    margin-top: 1vh;
+    border: none;
+    border-radius: .5vh;
+    font-size: 2vh;
+    font-weight: 700;
+    color: #ff5454;
+    background: 0F1014;
+}
+
+.admin-login-inputs::placeholder {
+    font-size: 2vh;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    color: #ff5454;
+}
+
+.admin-login-button {
+    position: relative;
+    align-self:flex-end;
+    width: 10vh;
+    height: 3vh !important;
+    font-weight: 900;
+    border: none;
+    border-radius: .3vh;
+    background: white;
+}
+
+.admin-needregister-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vh;
+    height: 3vh;
+    color: black;
+    border-radius: 5px;
+    background: white;
+}
+
+.tpanel-bg-header {
+    position: absolute;
+    bottom: 24vh;
+    left: -22vh;
+    width: 65vh;
+    font-size: 4.5vh;
+    font-weight: 800;
+    margin: 0;
+    transform: rotate(-90deg);
+    color: white;
+}
+
+.tpanel-bg-header h1:nth-child(1) {
+    position: relative;
+    font-weight: 900;
+    margin: 0;
+    float: left;
+    left: -90vh;
+    animation: headertitle-child1-open 1s forwards;
+}
+
+.tpanel-bg-header h1:nth-child(2) {
+    position: relative;
+    float: right;
+    font-weight: 900;
+    margin: 0;
+    left: -90vh;
+    animation: headertitle-child2-open 1s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes headertitle-child1-open {
+    0% {left: -90vh;}
+    100% {left: 0vh;}
+}
+
+@keyframes headertitle-child2-open {
+    0% {left: -90vh;}
+    100% {left: 0vh;}
+}
+
+.tpanel-bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+    z-index: -1;
+}
+
+.admin-login {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 2vh;
+    right: 2vh;
+    width: 10vh;
+    height: 5vh;
+    background-color: rgb(255, 71, 71);
+    border-radius: 10px;
+    font-weight: 900;
+    color: white;
+}
+
+/* admin */
+
+body {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    overflow: hidden;
+}
+
+.tadmin-admin-sidebar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5%;
+    height: 100%;
+    background: #202226;
+}
+
+.tadmin-admin-sidebar-contain {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 80%;
+    height: fit-content;
+}
+
+.tadmin-admin-sidebar-options {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #2F3137;
+    animation: buttons-hoverout 400ms forwards;
+}
+
+
+.tadmin-admin-sidebar-options:hover {
+    animation: buttons-hover 400ms forwards;
+}
+
+@keyframes buttons-hover {
+    from {
+        border-radius: 50px;
+    }
+    to {
+        border-radius: 10px;
+    }
+} @keyframes buttons-hoverout {
+    from {
+        border-radius: 10px;
+    }
+    to {
+        border-radius: 50px;
+    }
+}
+
+.tadmin-admin-sidebar-options img{
+    width: 6vh;
+}
+
+
+.tadmin-admin-sidebar-options i{
+    font-size: 2vh;
+    color: white;
+}
+
+.tadmin-admin-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    width: 96.5%;
+    height: 100%;
+    background-color: #2F3137;
+}
+
+.Chart-contain {
+    position: absolute;
+    width: 60vh;
+    height: 40vh;
+}
+
+#myChart {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.tadmin-admin-playerchart {
+    position: relative;
+    width: 90%;
+    height: 70vh;
+}
+
+.tadmin-admin-total-status {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+    width: 90%;
+    height: 22vh;
+    bottom: -30vh;
+    animation: totalopen 500ms forwards;
+}
+
+@keyframes totalopen {
+    0% {
+        bottom: -30vh;
+    } 100% {
+        bottom: 0;
+    }
+}
+
+.tadmin-admin-total-status-options {
+    position: relative;
+    width: 43vh;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.tadmin-admin-total-status-options::before {
+    content: "";
+    position: absolute;
+    height: 22vh;
+    width: 42.8vh;
+    bottom: 0;
+    right: 0;
+    border-radius: 15px;
+    background:url(../img/adminoptionsdown.png) no-repeat 0 0;
+    background-size: 43.1vh;
+}
+
+.tadmin-admin-total-status-options::after {
+    content: "";
+    position: absolute;
+    height: 22vh;
+    width: 41vh;
+    top: 0;
+    right: 0;
+    border-radius: 15px;
+    background:url(../img/adminoptionsup.png) no-repeat 0 0;
+    background-size: 42.2vh;
+}
+
+.tpanel-main-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vh;
+    height: 100vh;
+    background-color: #292929;
+} 
+
+.announce-container {
+    position: relative;
+    width: 90%;
+    height: 10vh;
+    top: -20vh;
+    animation: announceopen 500ms forwards;
+}
+
+@keyframes announceopen {
+    0% {
+        top: -20vh;
+    } 100% {
+        top: 0;
+    }
+}
+
+.announce-container h1 {
+    position: relative;
+    margin: 3vh 0vh 1vh 1vh;
+    font-size: 2vh;
+    font-weight: 900;
+    color: white;
+}
+
+.announce-input {
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    color: white;
+    background: #0F1014;
+    border: 0;
+    border-radius: 10px;
+    font-size: 2vh;
+    
+}
+
+.admin-notif-button {
+    position: relative;
+    float: right;
+    width: 10vh;
+    height: 4vh;
+    background: #0F1014;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    margin: 2vh 0vh 0vh 0vh;
+}
+
+.logout {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    height: 4vh;
+    top: 2vh;
+    right: 2vh;
+    text-decoration: none;
+    background-color: #ff5151;
+    border-radius: 10px;
+    font-size: 1.4vh;
+    font-weight: 900;
+    color: white;
+    z-index: 99;
+}
+
+.Anasayfa {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    height: 4vh;
+    top: 2vh;
+    right: 14vh;
+    text-decoration: none;
+    background-color: #ff5151;
+    border-radius: 10px;
+    font-size: 1.4vh;
+    font-weight: 900;
+    color: white;
+    z-index: 99;
+}

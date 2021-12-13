@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap%27');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0F1014;
+    font-family: "Montserrat";
+    overflow: hidden;
+}
+
+.tindex-main-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 130vh;
+    height: 90vh;
+    background-color: #ff5151;
+    border-radius: 2vh;
+}
+
+.tindex-sidebar-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 20%;
+    height: 100%;
+    background-color: #ff5151;
+    border-radius: 2vh;
+}
+
+.tindex-contents-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+.tindex-sidebar-container a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 5vh;
+    background-color: #1f2124;
+    font-size: 1.5vh;
+    color: white;
+    text-align: center;
+}
+
+.tindex-sidebar-container a:first-child {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 5vh;
+    background-color: #1f2124;
+    font-size: 1.5vh;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 15px;
+}
+
+.tindex-announcements {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vh;
+    width: 80%;
+    height: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.tindex-announcements-options {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 3vh;
+    margin-top: 3vh;
+}
+
+.tindex-announcements h1{
+    position: relative;
+    width: 80%;
+    font-size: 1.5vh;
+    font-weight: 800;
+    height: 2vh;
+    margin: 0;
+}
+
+.tindex-announcements p{
+    position: relative;
+    width: 20%;
+    font-size: 1.5vh;
+    font-weight: 800;
+    height: 2vh;
+    margin: 0;
+}
+
+.tindex-announcements-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 3vh;
+    border-bottom: .2vh solid #aeaeae;
+}
+
+.tindex-announcements-header h1{
+    position: relative;
+    width: 80%;
+    font-size: 1.5vh;
+    font-weight: 800;
+    height: 2vh;
+    margin: 0;
+}
+
+.tindex-announcements-header p{
+    position: relative;
+    width: 20%;
+    font-size: 1.5vh;
+    font-weight: 800;
+    height: 2vh;
+    margin: 0;
+}
+
+.homepage-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+}
+
+.homepage-container h1 {
+    position: relative;
+    color: white;
+    width: 90%;
+    font-size: 1.3vh;
+}
+
+.homepage-container h2 {
+    position: relative;
+    color: white;
+    width: 90%;
+    font-size: 1.3vh;
+}
+
+.tarihcontainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    color: white;
+}
+
+.sartlarcontainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 85vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: white;
+}
+
+.logout {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    height: 4vh;
+    top: 2vh;
+    right: 2vh;
+    text-decoration: none;
+    background-color: #ff5151;
+    border-radius: 10px;
+    font-size: 1.4vh;
+    font-weight: 900;
+    color: white;
+}
