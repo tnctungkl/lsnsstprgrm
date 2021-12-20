@@ -35,27 +35,23 @@ kontroluser()
                 <a href="">Lisansüstü Onay/Red</a>
             </div>
             <div class="tindex-contents-container">
-                <div class="tarihcontainer">
-            <h1>Lisansüstü Program İletişim</h1> 
-        <br>
-
-            <p>
-> lisansüstü@tuos.edu.tr -> e-mail <br><br>
-
-
-> Öğrenci Danışmanları Tam Liste:
-<dd>
----> Tunc KUL  / tnc.kl@tuos.edu.tr  / 0212 999 999<br>
----> Eren Yalcin / eren.ykcn@tuos.edu.tr / 0212 888 88 88<br>
----> Mustafa Budak / budak_budak@tuos.edu.tr / 0212 777 77 77<br>
----> Ulas Dunya Onbulak / ulas.dunya@tuos.edu.tr / 0212 666 66 66<br>
----> Ali Saim Tokdemir / alisami.tkdmr @tuos.edu.tr / 0212 555 55 55 <br><br>
-</dd>
-
-
-> Öğrenci İşleri Kayıtlı Elektronik Posta (KEP) Adresimiz: tuos.ogrenciisleri@hs34.kep.tr </p>
-</div>
-
+            <form  class="tuos-lsnss-register"  action="src/init.php" method="POST">
+                <h1>Mail</h1>
+                <input class="tuos-lsnss-inputs" type="text" name="lssnmail" placeholder="Mail">
+                <h1>İsim</h1>
+                <input class="tuos-lsnss-inputs" type="text" name="lssnisim" placeholder="İsim">
+                <h1>Soyisim</h1>
+                <input class="tuos-lsnss-inputs" type="text" name="lssnsoyisim" placeholder="Soyisim">
+                <h1>Doğum Tarihi</h1>
+                <input class="tuos-lsnss-inputs" type="date" name="lssndtarih" placeholder="Doğum Tarihi">
+                <h1>Cinsiyet</h1>
+                <input class="tuos-lsnss-inputs" type="text" name="lssncinsiyet" placeholder="Cinsiyet">
+                <h1>Bölümü</h1>
+                <input class="tuos-lsnss-inputs" type="text" name="lssnbölüm" placeholder="Bölümü">
+                <button class="tuos-lsnss-button" name="lsnssregister">
+                    Kayıt ol
+                </button>
+            </form>
             </div>
         </div>
 </body>

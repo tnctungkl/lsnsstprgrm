@@ -34,7 +34,7 @@ $kullanicisor->execute();
                 <a href="basvurugenelform.php">Lisansüstü Başvuru Genel Form</a>
                 <a href="basvuruadimlari.php">Lisansüstü Başvuru Adımları</a>
                 <a href="programiletisim.php">Lisansüstü İletişim</a>
-                <a href="">Lisansüstü Başvur</a>
+                <a href="basvur.php">Lisansüstü Başvur</a>
                 <a href="">Lisansüstü Onay/Red</a>
             </div>
             <div class="tindex-contents-container"> 

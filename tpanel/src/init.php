@@ -1,7 +1,7 @@
 <?php 
 
 try {
-	$db=new PDO("mysql:host=localhost;dbname=tpanel;charset=utf8",'root','Asdfghjkl84126');
+	$db=new PDO("mysql:host=localhost;dbname=tpanel;charset=utf8",'root','1a6fYsp5s8Lbgub');
 }
 
 catch (PDOExpception $e) {
@@ -64,6 +64,29 @@ if (isset($_POST['userlogin'])) {
 
 	}
 }
+
+
+if (isset($_POST['lsnssregister'])) {
+
+	$settingsupdate=$db->prepare("INSERT INTO admin_lssnbasvurular SET
+	lssn_mail=:lssn_mail, lssn_isim=:lssn_isim, lssn_soyisim=:lssn_soyisim, lssn_dtarih=:lssn_dtarih, lssn_cinsiyet=:lssn_cinsiyet, lssn_bolum=:lssn_bolum");
+
+	$update=$settingsupdate->execute(array(
+		'lssn_mail' => $_POST['lssnmail'],
+		'lssn_isim' => $_POST['lssnisim'],
+		'lssn_soyisim' => $_POST['lssnsoyisim'],
+		'lssn_dtarih' => $_POST['lssndtarih'],
+		'lssn_cinsiyet' => $_POST['lssncinsiyet'],
+		'lssn_bolum' => $_POST['lssnbölüm'],
+	));
+
+	if ($update) {
+		header("Location:/basvur.php?durum=ok");
+	} else {
+		header("Location:/basvur.php?durum=no");
+	}
+}
+
 
 if (isset($_POST['adminnotif'])) {
 

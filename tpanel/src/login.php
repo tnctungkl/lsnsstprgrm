@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
     <link rel="stylesheet" href="../src/admin.css">
-    <title>TUOS UNIVERSITESI - ADMIN PANEL</title>
+    <title>TOU ADMIN PANEL</title>
 </head>
 <body>
     <span id="admin-login" class="admin-login">ADMIN</span>

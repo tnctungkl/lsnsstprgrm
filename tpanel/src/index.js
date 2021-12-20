@@ -8,8 +8,11 @@ $(document).on('click', '#createaccount' ,function(e){
 
 $(document).on('click', '#admin-login' ,function(e){
     e.preventDefault();
-
     $('.tpanel-admin-login').css("display","flex")
     $('.tpanel-user-login').css("display","none")
     $('.tpanel-admin-register').css("display","none")
 }) 
+
+$(document).ready(function() {
+    $('#summernote').summernote();
+  });
